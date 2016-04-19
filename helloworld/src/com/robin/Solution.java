@@ -2,6 +2,11 @@ package com.robin;
 
 
 public class Solution {
+	/**
+	 * 83. Remove Duplicates from Sorted List 
+	 * @param head
+	 * @return
+	 */
     public ListNode deleteDuplicates(ListNode head) {
 
     	ListNode current = head;
