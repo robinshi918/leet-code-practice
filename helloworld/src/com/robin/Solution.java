@@ -4,6 +4,7 @@ package com.robin;
 public class Solution {
 	/**
 	 * 83. Remove Duplicates from Sorted List 
+	 * Robin: remove duplicated elements from unsorted linked list
 	 * @param head
 	 * @return
 	 */
@@ -26,6 +27,32 @@ public class Solution {
         	}
         	current = current.next;
         }
+    	return head;
+    }
+    
+    /**
+     * 83. Remove Duplicates from Sorted List 
+     * Robin: remove duplicate elements from sorted linked list
+     * @param head
+     * @return
+     */
+    public ListNode deleteDuplicates2(ListNode head) {
+    	
+    	ListNode current = head;
+		while (current != null && current.next != null) {
+
+			ListNode pointer = current.next;
+			while (current.val == pointer.val) {
+				pointer = pointer.next;
+				if (pointer == null) {
+					break;
+				}
+			}
+			
+			current.next = pointer;
+			current = current.next;
+		}
+    	
     	return head;
     }
 }

@@ -6,11 +6,12 @@ public class HelloWorld {
 		
 		Solution solution = new Solution();
 		
-		ListNode head = new ListNode(1);
-		head.append(1).append(1).append(3).append(1).append(2).append(3).append(4).append(4);
+		ListNode head = new ListNode(5);
+		head.append(1).append(1).append(3).append(3).append(4).append(5);
+		
 		System.out.println(head.toString());
 		
-		solution.deleteDuplicates(head);
+		solution.deleteDuplicates2(head);
 		System.out.println(head.toString());
 	}
 }
