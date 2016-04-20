@@ -1,7 +1,7 @@
 package com.robin;
 
 
-public class Solution {
+public class Solution83 {
 	/**
 	 * 83. Remove Duplicates from Sorted List 
 	 * Robin: remove duplicated elements from unsorted linked list
