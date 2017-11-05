@@ -4,7 +4,7 @@ public class HelloWorld {
 
 	public static void main(String[] args) {
 
-		doSolution3();
+		doSolution2();
 	}
 
 
@@ -29,6 +29,21 @@ public class HelloWorld {
 		int[] result = solution.twoSum(array, 16);
 
 		System.out.println(String.format("[%d, %d]", result[0], result[1]));
+	}
+
+	private static void doSolution2() {
+		Solution2 solution = new Solution2();
+		ListNode l1 = new ListNode(1);
+		l1.next = new ListNode(8);
+		ListNode l2 = new ListNode(0);
+
+		ListNode result = solution.addTwoNumbers(l1, l2);
+		System.out.print(result.val);
+		while (result.next != null) {
+			result = result.next;
+			System.out.print(" -> " + result.val);
+
+		}
 	}
 }
 
